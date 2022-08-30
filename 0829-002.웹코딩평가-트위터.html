@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d413dd6e12.js" crossorigin="anonymous"></script>
+    <title>웹코딩평가</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: white;
+            font-size: 14px;
+            width: 1200px;
+            /* height: auto; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       .img001 {
+        float: left;
+        
+       }
+
+       #header {
+        float: right;
+        display: inline-block;
+       }
+
+       .twitter {
+        display: block;
+        float: right;
+        color: dodgerblue;
+        font-size: 45px;
+        padding-top: 100px;
+        padding-right: 80px;
+       }
+
+        h1 {
+        float: right;
+        position: absolute;
+        display: block;
+        padding-top: 170px;
+        font-size: 63px;
+        font-weight: 900;
+        color: #000;
+       }
+
+       #content001 {
+        float: right;
+        position: absolute;
+        padding-left: 1050px;
+        margin-top: 20px;
+       }
+
+       h3 {
+        position: absolute;
+        float: right;
+        padding-top: 300px;
+        padding-left: 30px;
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        width: 450px;
+        /* border: 1px solid black; */
+       }
+
+       form {
+        float: right;
+        position: relative;
+        width: 500px;
+        height: 500px;
+        /* border: 1px solid black; */
+        padding-top: 400px;
+       }
+
+       #content001 > p {
+        margin-left: 35px;
+        margin-top: 580px;
+        font-size: 1px;
+        color: #333;
+       }
+
+       #content001 > p > a {
+        color: dodgerblue;
+        text-decoration: none;
+       }
+
+       #content001 > p > a:hover {
+        text-decoration: underline;
+       }
+
+       button {
+        float: right;
+        line-height: 40px;
+        margin: 5px;
+        border-radius: 20px;
+        width: 300px;
+        height: 40px;
+        outline: none;
+        text-align: center;
+        background: #fff;
+        border: 1px solid rgb(212, 210, 210);
+        cursor: pointer;
+       }
+
+       .b01 {
+        margin-right: 170px;
+        transition: 0.3s;
+        font-size: 14px;
+       }
+
+       .b01:hover {
+        background: rgb(219, 237, 245);
+       }
+
+       .b02 {
+        margin-right: 170px;
+        font-weight: 600;
+        transition: 0.3s;
+        font-size: 16px;
+       }
+
+       .b02:hover {
+        background: #eee;
+       }
+
+       .b03 {
+        border: none;
+        outline: none;
+        height: 20px;
+        margin-right: 170px;
+        margin-bottom: 10px;
+        margin-top: -3px;
+       }
+
+       .b03 > a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        line-height: 20px;
+       }
+
+       .b03 > a:before {
+        content: "";
+        width: 110px;
+        height: 1px;
+        display: inline-block;
+        margin-bottom: 5px;
+        background: #eee;
+       }
+
+       .b03 > a:after {
+        content: "";
+        width: 110px;
+        height: 1px;
+        display: inline-block;
+        margin-bottom: 5px;
+        background: #eee;
+       }
+
+       .b04 {
+        margin-right: 170px;
+        font-weight: 800;
+        background: rgb(47, 148, 248);
+        color: #fff;
+        font-size: 15px;
+        line-height: 30px;
+        transition: 0.3s;
+       }
+
+       .b04:hover {
+        background: rgb(3, 139, 218);
+       }
+
+       #content002 {
+        float: right;
+        position: relative;
+        bottom: 250px;
+        left: 110px;
+        margin-right: -80px;
+        margin-top: 50px;
+       }
+
+       #content002 > p {
+        text-align: left;
+        font-weight: 800;
+        font-size: 17px;
+       }
+
+       .b05 {
+        color: dodgerblue;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 30px;
+        transition: 0.3s;
+       }
+
+       .b05:hover {
+        background: rgb(203, 230, 247);
+       }
+
+       #footer {
+        position: absolute;
+        width: 1300px;
+        bottom: 10px;
+        transform: translateX(25%);
+       }
+
+       #footer > a {
+        margin-right: 10px;
+        text-align: center;
+        font-size: 13px;
+        text-decoration: none;
+        color: #333;
+       }
+
+       #footer > a:hover {
+        text-decoration: underline;
+       }
+
+       #footer > .h:hover {
+        text-decoration: none;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="img001">
+            <img src="images/트위터 (1).PNG" alt="트위터이미지">
+        </div>
+
+        <div id="header">
+            <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+            <h1>지금 일어나고 있는 일</h1>
+        </div>
+
+        <div id="content001">
+            <h3>오늘 트위터에 가입하세요.</h3>
+            <form action="">
+                <button class="b01"> <img src="images/구글.PNG" alt="구글이미지"> Google 계정으로 가입하기</button>
+                <button class="b02"><i class="fa-brands fa-apple"></i>Apple에서 가입하기</button>
+    
+                <button class="b03"><a href="#"> 또는 </a></button>
+
+                <button class="b04">휴대폰 번호나 이메일 주소로 가입하기</button>
+            </form>
+            <p>가입하시려면 <a href="#">쿠키 사용</a>을 포함해 <a href="#">이용약관</a>과  <a href="#">개인정보 처리<br>
+                방침</a>에 동의해야 합니다.</p>
+        </div>
+
+        <div id="content002">
+                <p>이미 트위터에 가입하셨나요?</p>
+                <button class="b05">로그인</button>
+        </div>
+
+        <div id="footer">
+            <a href="#">소개</a>
+            <a href="#">고객센터</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">쿠키 정책</a>
+            <a href="#">접근성</a>
+            <a href="#">광고 정보</a>
+            <a href="#">블로그</a>
+            <a href="#">상태</a>
+            <a href="#">채용</a>
+            <a href="#">브랜드 리소스</a>
+            <a href="#">광고</a>
+            <a href="#">마케팅</a>
+            <a href="#">비즈니스용 트위터</a>
+            <a href="#">개발자</a>
+            <a href="#">디렉터리</a>
+            <a href="#">설정</a>
+            <a class="h" href="#"><i class="fa-solid fa-copyright"></i> 2022 Twitter, Inc.</a>
+        </div>
+    </div>
+</body>
+</html>
